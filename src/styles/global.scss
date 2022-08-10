@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px "Poppins", Arial, sans-serif;
+  color: #121214;
+}
+
+input,
+textarea {
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+main {
+  border: solid 1px #000;
+
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "navbar navbar"
+    "content sidebar";
+
+  .content {
+    grid-area: content;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .navbar {
+    grid-area: navbar;
+  }
+}

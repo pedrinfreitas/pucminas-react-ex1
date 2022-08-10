@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  .content__box {
+    display: flex;
+    margin: 0.5rem;
+    img {
+      margin-right: 1rem;
+    }
+    p {
+      padding: 0.5rem;
+      border: solid 1px #000;
+    }
+  }
+}
